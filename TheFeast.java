@@ -9,9 +9,13 @@ public class TheFeast {
         int total=n/c;
         int Remainingwrappers=0;
         int bonusBars;
-            bonusBars=total/m;
-            Remainingwrappers=total-m;
-            total+=bonusBars+((bonusBars+Remainingwrappers)/m);
-        return total;
+            if(n>c){
+        bonusBars=total/m;
+        Remainingwrappers=total-m;
+        total+=bonusBars+((bonusBars+Remainingwrappers)/m);
+        return total;}
+        else {
+            return total=0;
+        }
     }
 }
