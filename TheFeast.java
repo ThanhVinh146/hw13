@@ -9,7 +9,7 @@ public class TheFeast {
         int total=n/c;
         int Remainingwrappers=0;
         int bonusBars;
-        if(n>c){
+        if(n>=c){
         bonusBars=total/m;
         Remainingwrappers=total-m;
         total+=bonusBars+((bonusBars+Remainingwrappers)/m);
